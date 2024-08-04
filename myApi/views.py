@@ -49,19 +49,7 @@ class UserDetailAPIView(APIView):
         user.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-class UserMatchAPIView(APIView):
-    # def get(self, request, pk):
-    #     user = User.objects.get(pk=pk)
-    #     if not user:
-    #         return Response(status=status.HTTP_404_NOT_FOUND)
-    #     matches = User.objects.filter(
-    #         gender=user.gender,
-    #         city=user.city,
-    #         interests=user.interests
-    #     ).exclude(pk=pk)
-    #     serializer = UserSerializer(matches, many=True)
-    #     return Response(serializer.data)
-    
+class UserMatchAPIView(APIView):    
     def get(self, request, pk):
         try:
             user = User.objects.get(pk=pk)
