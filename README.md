@@ -20,7 +20,7 @@ This project is a Django-based API for managing user profiles and finding potent
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/marriage-matchmaking-app.git
+    git clone https://github.com/TUSHAR-VERMA-star/marriage-matchmaking.git
     cd marriage-matchmaking-app
     ```
 
